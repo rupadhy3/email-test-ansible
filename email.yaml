@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  vars_files: secret.yml
+  tasks:
+  - name: Sending an email using Ansible
+    mail:
+      host: smtp.gmail.com
+      port: 587
+      username: rakesh.up@gmail.com
+      password: "{{ paz }}"
+      to: srakeshu@gmail.com
+      subject: Email By Ansible
+      body: Test successful
+    delegate_to: localhost
