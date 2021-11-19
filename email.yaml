@@ -1,6 +1,6 @@
 ---
 - hosts: localhost
-  vars_files: secret.yml
+  vars_files: secret.yaml
   tasks:
   - name: Sending an email using Ansible
     mail:
