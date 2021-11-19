@@ -1,5 +1,5 @@
 ---
-- hosts: loaclhost
+- hosts: localhost
   tasks:
   - name: Display a message
     debug:
