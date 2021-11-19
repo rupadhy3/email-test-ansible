@@ -1,6 +1,0 @@
----
-- host: loaclhost
-  tasks:
-  - name: Display a message
-    debug:
-       msg: "I have run successfully"
